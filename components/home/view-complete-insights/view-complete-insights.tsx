@@ -5,10 +5,10 @@ import styles from './view-complete-insights.style'
 const ViewCompleteInsights = () => {
   return (
     <View>
-      <View style={{ backgroundColor: '#FEB95F30', margin: 15, borderRadius: 10 }}>
+      <View style={{ backgroundColor: '#FEB95F30', borderRadius: 10, margin: 20 }}>
 
         {/* Stats Container */}
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 20 }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 20, marginHorizontal: 10 }}>
           <View>
             <Text style={{ color: '#EB5D47CC', fontWeight: 'bold', fontSize: 25, textAlign: 'center' }}>+10%</Text>
             <Text style={{ color: '#EB5D47CC', fontWeight: 'bold', fontSize: 15, textAlign: 'center' }}>Mood Gain</Text>
@@ -32,7 +32,7 @@ const ViewCompleteInsights = () => {
             justifyContent: 'center',
             marginBottom: 20
           }}>
-          <Text style={{ color: '#fff', backgroundColor: '#EB5D47CC', width: '55%', textAlign: 'center', padding: 8, borderRadius: 25, paddingHorizontal: 10, fontWeight: 'bold' }}>View Complete Insights</Text>
+          <Text style={{ color: '#fff', backgroundColor: '#EB5D47CC', width: '55%', textAlign: 'center', paddingVertical: 12, borderRadius: 25, paddingHorizontal: 10, fontWeight: 'bold' }}>View Complete Insights</Text>
         </View>
       </View>
     </View>
