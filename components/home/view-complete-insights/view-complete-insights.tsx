@@ -30,9 +30,13 @@ const ViewCompleteInsights = () => {
           style={{
             flexDirection: 'row',
             justifyContent: 'center',
-            marginBottom: 20
+            marginBottom: 20,
+            backgroundColor: '#EB5D47CC', 
+            width: '55%',
+            borderRadius: 25,
+            alignSelf: 'center'
           }}>
-          <Text style={{ color: '#fff', backgroundColor: '#EB5D47CC', width: '55%', textAlign: 'center', paddingVertical: 12, borderRadius: 25, paddingHorizontal: 10, fontWeight: 'bold' }}>View Complete Insights</Text>
+          <Text style={{ color: '#fff',  textAlign: 'center', paddingVertical: 12, paddingHorizontal: 10, fontWeight: 'bold' }}>View Complete Insights</Text>
         </View>
       </View>
     </View>

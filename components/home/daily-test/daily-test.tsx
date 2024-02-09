@@ -1,18 +1,41 @@
 import React from 'react'
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, Modal, TouchableOpacity } from 'react-native'
 import styles from './daily-test.style'
 import Images from '../../../images/images'
+import TakeTestModal from '../take-test-modal/take-test-modal'
 
 const DailyTest = () => {
+  const [modalVisible, setModalVisible] = React.useState(false);
+
   return (
     <View>
-      <Image style={{ width: 'auto', height: 180, borderRadius: 15, margin: 20 }} source={Images.takeATest} />
+      <TouchableOpacity activeOpacity={0.8} onPress={() => {
+        setModalVisible(true);
+      }}>
+        <Image style={{ width: 'auto', height: 180, borderRadius: 15, margin: 20 }} source={Images.takeATest} />
+      </TouchableOpacity>
+      <Modal
+        animationType="fade"
+        transparent={false}
+        visible={modalVisible}
+        onRequestClose={() => {
+          setModalVisible(!modalVisible);
+        }}
+      >
+        <View style={{ flexDirection: 'row' }}>
+          <TouchableOpacity onPress={() => {
+            setModalVisible(!modalVisible);
+          }}>
+            <Image
+              source={Images.back}
+              style={{ width: 25, height: 25, margin: 20, alignSelf: 'center' }}
+            />
+          </TouchableOpacity>
+          <Text style={{ alignSelf: 'center', fontSize: 20, fontWeight: 'bold' }}>Back to Home</Text>
+        </View>
+        <TakeTestModal />
+      </Modal>
     </View>
-    // <View style={{backgroundColor: '#EB5D4730', margin: 20, padding: 15, borderRadius: 10}}>
-    //   <Text style={{textAlign: 'center', fontSize: 24, fontWeight: 'bold'}}>Daily Test</Text>
-    //   <Text style={{textAlign: 'center', fontSize: 16, fontWeight: '400'}}>Take a moment to reflect and learn more about your well-being.</Text>
-    //   <Text style={{textAlign: 'center', paddingHorizontal: 20, paddingVertical: 8, borderRadius: 25,  backgroundColor: '#EB5D47CC', width: '50%', color: '#fff', fontWeight: 'bold', marginTop: 10, alignSelf: 'center'}}>Start Test</Text>
-    // </View>
   )
 }
 
