@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView } from 'react-native'
 import styles from './home.style'
 import Navbar from '../../components/global/navbar/navbar'
 import ViewCompleteInsights from '../../components/home/view-complete-insights/view-complete-insights'
@@ -8,12 +8,12 @@ import DailyTest from '../../components/home/daily-test/daily-test'
 
 const Home = () => {
   return (
-    <View>
+    <ScrollView>
       <Navbar title="Home" />
       <ViewCompleteInsights />
-      {/* <FeelingToday /> */}
+      <FeelingToday />
       <DailyTest />
-    </View>
+    </ScrollView>
   )
 }
 
