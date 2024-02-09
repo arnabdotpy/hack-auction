@@ -28,15 +28,15 @@ function TabNavigator() {
           let iconName;
           let rn = route.name;
           if (rn === 'Home') {
-            iconName = focused ? Images.back : Images.back;
+            iconName = focused ? Images.Home1 : Images.Home2;
           } else if (rn === 'Explore') {
-            iconName = focused ? Images.back : Images.back;
+            iconName = focused ? Images.Compass2 : Images.Compass;
           } else if (rn === 'Insight') {
-            iconName = focused ? Images.back : Images.back;
+            iconName = focused ? Images.insights2 : Images.insights;
           } else if (rn === 'Consult') {
-            iconName = focused ? Images.back : Images.back;
+            iconName = focused ? Images.consultant2: Images.consult;
           }
-          return <Image source={iconName} style={{ width: Platform.OS == "ios" ? 18 : 15, height: Platform.OS == "ios" ? 18 : 15, marginTop: 6 }} />;
+          return <Image source={iconName} style={{ width: Platform.OS == "ios" ? 18 : 16, height: Platform.OS == "ios" ? 18 : 15, marginTop: 6 }} />;
         },
         tabBarLabel(props) {
           let rn = route.name;
