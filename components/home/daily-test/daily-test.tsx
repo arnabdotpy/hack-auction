@@ -4,8 +4,8 @@ import styles from './daily-test.style'
 import Images from '../../../images/images'
 import TakeTestModal from '../take-test-modal/take-test-modal'
 
-const DailyTest = () => {
-  const [modalVisible, setModalVisible] = React.useState(false);
+const DailyTest = ({streak, getStreak}) => {
+  const [modalVisible, setModalVisible] = React.useState(false); 
 
   return (
     <View>
@@ -33,7 +33,7 @@ const DailyTest = () => {
           </TouchableOpacity>
           <Text style={{ alignSelf: 'center', fontSize: 20, fontWeight: 'bold' }}>Back to Home</Text>
         </View>
-        <TakeTestModal />
+        <TakeTestModal setModalVisible={setModalVisible} getStreak={getStreak} />
       </Modal>
     </View>
   )

@@ -4,7 +4,7 @@ import styles from './navbar.style'
 
 const Navbar = ({title}: any) => {
   return (
-    <View style={{flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 20}}>
+    <View style={{flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 20, borderBottomColor: '#cccccc60', borderBottomWidth: 2, paddingBottom: 20}}>
       <View style={{flexDirection: 'row', gap: 10}}>
         <Text style={{fontWeight: 'bold', fontSize: 35}}>{title}</Text>
       </View>

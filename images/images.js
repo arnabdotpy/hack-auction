@@ -14,6 +14,7 @@ import insights from './insights.png';
 import insights2 from './insights2.png';
 import consult from './consult.png';
 import consultant2 from './consultant2.png';
+import homePageBottom from './homePageBottom.png';
 
 const Images = {
   img,
@@ -31,7 +32,8 @@ const Images = {
   insights,
   insights2,
   consult,
-  consultant2
+  consultant2,
+  homePageBottom
 };
 
 export default Images;

@@ -1,8 +1,10 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 import styles from './view-complete-insights.style'
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const ViewCompleteInsights = () => {
+const ViewCompleteInsights = ({streak}) => {
+
   return (
     <View>
       <View style={{ backgroundColor: '#FEB95F30', borderRadius: 10, margin: 20 }}>
@@ -15,7 +17,7 @@ const ViewCompleteInsights = () => {
           </View>
           <View style={{ height: '100%', backgroundColor: '#EB5D47CC', width: 2 }}></View>
           <View>
-            <Text style={{ color: '#EB5D47CC', fontWeight: 'bold', fontSize: 25, textAlign: 'center' }}>59 🔥</Text>
+            <Text style={{ color: '#EB5D47CC', fontWeight: 'bold', fontSize: 25, textAlign: 'center' }}>{streak ? streak : '--'} 🔥</Text>
             <Text style={{ color: '#EB5D47CC', fontWeight: 'bold', fontSize: 15, textAlign: 'center' }}>Streak</Text>
           </View>
           <View style={{ height: '100%', backgroundColor: '#EB5D47CC', width: 2 }}></View>
