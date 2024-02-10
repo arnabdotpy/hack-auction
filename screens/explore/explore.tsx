@@ -8,6 +8,7 @@ const Explore = () => {
   return (
     <View>
       <Navbar title="Explore"/>
+      
       <Image source={Images.Menu} style={{height: 200, width: 'auto'}} />
       <Image source={Images.Story} style={{height: 200, width: 'auto'}} />
     
