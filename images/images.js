@@ -24,6 +24,7 @@ import Card2 from './Card2.png';
 import Card3 from './Card3.png';
 import Menu from './Menu.png';
 import Story from './Story.png';
+import quote from './quote.png';
 
 const Images = {
   img,
@@ -51,8 +52,8 @@ const Images = {
   Card2,
   Card3,
   Menu,
-  Story
-
+  Story,
+  quote
 };
 
 export default Images;

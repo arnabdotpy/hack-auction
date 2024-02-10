@@ -13,9 +13,9 @@ const Consult = () => {
       <Image source={Images.Tools} style={{height: 108, width: 'auto', margin: 20}} />
       <Image source={Images.Bot} style={{height: 150, width: 'auto', margin: 20}} />
       <Text style={{marginLeft: 20, fontSize: 24, fontWeight: 'bold'}}>Consult an Expert</Text>
-      <Image source={Images.Card1} style={{height: 180, width: 'auto', margin: 20}} />
-      <Image source={Images.Card2} style={{height: 180, width: 'auto', margin: 20}} />
-      <Image source={Images.Card3} style={{height: 180, width: 'auto', margin: 20}} />
+      <Image source={Images.Card1} style={{height: 180, width: 'auto', marginHorizontal: 35, marginVertical: 25}} />
+      <Image source={Images.Card2} style={{height: 180, width: 'auto', marginHorizontal: 35, marginVertical: 25}} />
+      <Image source={Images.Card3} style={{height: 180, width: 'auto', marginHorizontal: 35, marginVertical: 25}} />
       <View
           style={{
             flexDirection: 'row',
