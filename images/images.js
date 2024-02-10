@@ -15,6 +15,15 @@ import insights2 from './insights2.png';
 import consult from './consult.png';
 import consultant2 from './consultant2.png';
 import homePageBottom from './homePageBottom.png';
+import Chart from './Chart.png';
+import piechart from './piechart.png';
+import Tools from './Tools.png';
+import Bot from './Bot.png';
+import Card1 from './Card1.png';
+import Card2 from './Card2.png';
+import Card3 from './Card3.png';
+import Menu from './Menu.png';
+import Story from './Story.png';
 
 const Images = {
   img,
@@ -33,7 +42,17 @@ const Images = {
   insights2,
   consult,
   consultant2,
-  homePageBottom
+  homePageBottom,
+  Chart,
+  piechart,
+  Tools,
+  Bot,
+  Card1,
+  Card2,
+  Card3,
+  Menu,
+  Story
+
 };
 
 export default Images;
